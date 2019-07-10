@@ -1,0 +1,6 @@
+Host gitlab
+    HostName gitlab.com
+    User git
+    Port 22
+    IdentitiesOnly yes
+    IdentityFile /root/.ssh/id_rsa
