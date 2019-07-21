@@ -1,0 +1,27 @@
+{
+  "name": "motacheng-backend",
+  "version": "0.0.1",
+  "repository": "git@gitlab.com:motacheng/motacheng-backend.git",
+  "author": "jubeatWwW <l6104400@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "node dist/main.js dev",
+    "prebuild": "tsc -p tsconfig.build.json",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts"
+  },
+  "dependencies": {
+    "dockerode": "^2.5.8",
+    "mustache": "^3.0.1",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^2.5.20",
+    "@types/node": "^12.6.2",
+    "@types/yargs": "^13.0.0",
+    "app-root-path": "^2.2.1",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
